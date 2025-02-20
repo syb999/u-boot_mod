@@ -91,6 +91,7 @@ Currently supported devices:
   - TP-Link TL-WA801ND v2
   - TP-Link TL-WA830RE v2
   - TP-Link TL-WR841N/D v8
+  - KissLink NB1210
   - YunCore CPE870
 
 - **Atheros AR9342**:
@@ -161,6 +162,7 @@ More information about supported devices:
 | Hak5 LAN Turtle | AR9331 | 16 MiB | 64 MiB DDR2 | 128 KiB | R/W |
 | Hak5 Packet Squirrel | AR9331 | 16 MiB | 64 MiB DDR2 | 128 KiB | R/W |
 | Hak5 WiFi Pineapple NANO | AR9331 | 16 MiB | 64 MiB DDR2 | 128 KiB | R/W |
+| KissLink NB1210 | AR9341 | 16 MiB | 64 MiB DDR1 | 64 KiB, LZMA | RO |
 | P&W CPE505N | QCA9531 | 16 MiB | 64 MiB DDR2 | 256 KiB | R/W |
 | P&W R602N | QCA9531 | 16 MiB | 64 MiB DDR2 | 256 KiB | R/W |
 | [TP-Link TL-MR10U v1](http://wiki.openwrt.org/toh/tp-link/tl-mr10u) | AR9331 | 4 MiB | 32 MiB DDR1 | 64 KiB, LZMA | RO |

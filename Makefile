@@ -32,6 +32,9 @@ export BIN_DIR      = $(BUILD_TOPDIR)/bin
 export SUB_MAKE_CMD = $(MAKE) --silent --no-print-directory \
                       ARCH=mips V=1 SHELL=$(SHELL)
 
+export MAKECMD=make --silent ARCH=mips CROSS_COMPILE=mips-openwrt-linux-uclibc-
+export PATH:=/home/username/openwrt-15.05/staging_dir/toolchain-mips_34kc_gcc-4.8-linaro_uClibc-0.9.33.2/bin/:$(PATH)
+
 # ==========================================================================
 # You can override some default configuration options below or pass them on
 # command line, for example:
@@ -54,7 +57,7 @@ export SUB_MAKE_CMD = $(MAKE) --silent --no-print-directory \
 # export PATH:=$(TOOLCHAIN_DIR)/bin:$(PATH)
 
 ifndef CROSS_COMPILE
-  CROSS_COMPILE = mips-openwrt-linux-musl-
+  CROSS_COMPILE = mips-openwrt-linux-uclibc-
 endif
 export CROSS_COMPILE
 
@@ -246,7 +249,8 @@ COMMON_ETHS27_TARGETS = \
 	tp-link_tl-wr841n_v8 \
 	tp-link_tl-wr841n_v9 \
 	tp-link_tl-wr842n_v3 \
-	tp-link_tl-wr902ac_v1
+	tp-link_tl-wr902ac_v1 \
+	kisslink_nb1210
 
 $(COMMON_ETHS27_TARGETS):
 	@$(call build,123,1,ETH_CONFIG=_s27)
